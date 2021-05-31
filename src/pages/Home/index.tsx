@@ -48,7 +48,7 @@ const Home = (): JSX.Element => {
         <li>
           <img src={product.image} alt={product.title} />
           <strong>{product.title}</strong>
-          <span>{product.priceFormatted}</span>
+          <span>{formatPrice(product.price)}</span>
           <button
             type="button"
             data-testid="add-product-button"
